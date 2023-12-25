@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurants website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="restaurant.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">BistroPal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="restaurant.html">Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="addRestaurant.html">Add Restaurant</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="row d-flex flex-column align-content-center">
+        <div class="col-10">
+            <h1>Restaurant List</h1>
+            <label for="Cuisine">Filter by Cuisine:</label>
+            <select id="Cuisine" class="form-select" aria-label="Default select example">
+                <option selected value="All">All</option>
+                <option value="Italian">Italian</option>
+                <option value="Mexican">Mexican</option>
+              </select>
+
+              <label for="name">Sort by:</label>
+              <select id="name" class="form-select" aria-label="Default select example">
+                  <option selected value="Name">Name</option>
+                  <option value="Rating">Rating</option>
+                </select>
+
+                <ul id="itemList">
+
+                </ul>
+
+        </div>
+
+      </div>
+  </body>
+
+</html>
